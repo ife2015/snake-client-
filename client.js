@@ -11,10 +11,6 @@ const connect = function () {
   conn.on('connect', () => {
     console.log("Successful Connection Established");
     conn.write('Name: OOU');
-    // conn.write('Move: up');
-    // conn.write('Move: down');
-    // conn.write('Move: left');
-    // conn.write('Move: right');
   });
 
   conn.on ('data', (data) => {
@@ -27,9 +23,3 @@ const connect = function () {
 
 module.exports = {connect};
 
-// client.on('connect', () => {
-//   //when a connection is established
-//   console.log("sucessfully connected to server");
-//   // writes the messages to the server
-//   client.write('hello this travis');
-// })
